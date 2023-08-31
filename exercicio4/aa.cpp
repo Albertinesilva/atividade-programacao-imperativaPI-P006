@@ -1,17 +1,19 @@
-#include <iostream>
+#include<iostream>
 
 using namespace std;
 
-int main()
-{
+int main(){
 
     double raio;
     double diametro;
 
+
     cout << "Entre com o raio do circulo : ";
     cin >> raio;
-    
-    diametro = 2 * raio;
+    diametro = 2*raio;
 
     cout << "Valor do diametro : " << diametro;
+
+
+    return 0;
 }

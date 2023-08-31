@@ -1,21 +1,22 @@
-/*Exercício 4: Operações com valores de ponto flutuante.
-● Escreva um programa que
-c. Atribua à variável z a somas das variáveis a e b, imprima o resultado na tela;*/
+#include<iostream>
 
-#include <iostream>
 using namespace std;
 
-int main()
-{
-    float a, b, z;
+int main(){
 
-    cout << "Digite o valor de a: ";
-    cin >> a;
+    double x,y,z;
 
-    cout << "Digite o valor de b: ";
-    cin >> b;
+    printf("Entre com o valor de x :");
+    scanf("%lf",&x);
 
-    z = a + b;
+    printf("Entre com o valor de y :");
+    scanf("%lf",&y);
 
-    cout << "O valor de z é: " << z << endl;
+    z = x+y;
+
+    printf("z : %lf\n",z);
+
+
+
+    return 0;
 }

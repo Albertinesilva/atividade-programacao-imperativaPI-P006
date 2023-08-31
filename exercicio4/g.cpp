@@ -1,28 +1,26 @@
-/*Exercício 4: Operações com valores de ponto flutuante.
-● Escreva um programa que
-g. Atribua à variável z o menor valor entre as variáveis x e y, imprima o resultado na tela;*/
+#include<iostream>
 
-#include <iostream>
 using namespace std;
 
-int main()
-{
-    float x, y, z;
+int main(){
 
-    cout << "Digite o valor de x: ";
-    cin >> x;
+    double x,y,z;
 
-    cout << "Digite o valor de y: ";
-    cin >> y;
+    printf("Entre com o valor de x :");
+    scanf("%lf",&x);
 
-    if (x < y)
-    {
-        z = x;
+    printf("Entre com o valor de y :");
+    scanf("%lf",&y);
+
+    if(x<y){
+        z=x;
+        printf("%d é o menor entre os 2 numeros digitados\n",z);
+    }else if(x>y){
+        z=y;
+        printf("%d é o menor entre os 2 numeros digitados\n",z);
+    }else{
+        printf("Numeros iguais");
     }
-    else
-    {
-        z = y;
-    }
 
-    cout << "O valor de z é: " << z << endl;
+    return 0;
 }

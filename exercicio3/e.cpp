@@ -1,24 +1,20 @@
-/*Exercício 3: Operações com caracteres
-● Escreva um programa que
-e. Atribua à variável ch3 o valor 'A' se o caractere ch1 for uma letra maiúscula e o valor ' '(caractere espaço vazio) caso contrário. Use o
-operador condicional (?) com esta finalidade. Imprima o valor de ch3 na tela;*/
-
-#include <iostream>
-#include <cctype>
+#include<iostream>
+#include<cctype>
 using namespace std;
 
-int main()
-{
+int main(){
 
-    char ch1, ch2, ch3;
+    char ch1,ch2,ch3;
 
-    cout << "Entre com um caractere : ";
+    cout << "Digite um caractere :";
     cin >> ch1;
 
-    cout << "Entre com outro caractere : ";
+    cout << "Digite um caractere :";
     cin >> ch2;
 
-    ch3 = (isupper(ch1)) ? 'A' : ' ';
+    (isupper(ch1)) ? (ch3='A') : (ch3 = ' ');
 
     printf("%c\n", ch3);
+
+    return 0;
 }

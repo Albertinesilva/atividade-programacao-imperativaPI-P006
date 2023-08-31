@@ -1,21 +1,22 @@
-/*Exercício 4: Operações com valores de ponto flutuante.
-● Escreva um programa que
-e. Atribua à variável z o produto entre as variáveis x e y, imprima o resultado na tela;*/
+#include<iostream>
 
-#include <iostream>
 using namespace std;
 
-int main()
-{
-    float x, y, z;
+int main(){
 
-    cout << "Digite o valor de x: ";
-    cin >> x;
+    double x,y,z;
 
-    cout << "Digite o valor de y: ";
-    cin >> y;
+    printf("Entre com o valor de x :");
+    scanf("%lf",&x);
 
-    z = x * y;
+    printf("Entre com o valor de y :");
+    scanf("%lf",&y);
 
-    cout << "O valor de z é: " << z << endl;
+    z = x*y;
+
+    printf("z : %lf\n",z);
+
+
+
+    return 0;
 }

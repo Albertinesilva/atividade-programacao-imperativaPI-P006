@@ -12,10 +12,6 @@ int main(){
     printf("Entre com o valor de y :");
     scanf("%lf",&y);
 
-    z = (x+y)/2;
-
-    printf("z : %lf\n",z);
-
 
 
     return 0;
